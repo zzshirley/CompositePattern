@@ -17,13 +17,8 @@ public class file extends Inode{
 		
 	}
 	@Override
-	void display(int depth) {
+	void display() {
 		// TODO Auto-generated method stub
-		if(depth>0) {
-			for(int i=0;i<depth;i++) {
-				System.out.println('-');
-			}
-		}
 		System.out.println("file-"+fileName);
 	}
 	@Override
