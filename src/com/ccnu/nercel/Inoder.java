@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Inoder extends Inode{
 	
-	List<Inode> nodeList = new ArrayList<Inode>();
+	List<Inode> nodeList = new ArrayList<>();
 
 	Inoder(String nodeName) {
 		super(nodeName);
@@ -27,8 +27,12 @@ public class Inoder extends Inode{
 	@Override
 	void display() {
 		// TODO Auto-generated method stub
+		if(nodeList == null || nodeList.size() == 0) {
+			System.out.println("not found.");
+			return;
+		}
         for(Inode inode:nodeList) {
-        		inode.display();
+			System.out.println(inode.nodename);
         }
 	}	
 }
