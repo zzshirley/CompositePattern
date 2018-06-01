@@ -27,6 +27,10 @@ public class Inoder extends Inode{
 	@Override
 	void display() {
 		// TODO Auto-generated method stub
+		if(nodeList == null || nodeList.size() == 0) {
+			System.out.println("not found.");
+			return;
+		}
         for(Inode inode:nodeList) {
 			System.out.println(inode.nodename);
         }
