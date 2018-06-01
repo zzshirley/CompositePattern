@@ -1,15 +1,16 @@
 package com.ccnu.nercel;
 
+
 public class file extends Inode{
 	
 	String fileName;
+	
 	file(String fileName){
 		super(fileName);
 	}
 	@Override
 	void add(Inode inode) {
 		// TODO Auto-generated method stub
-		
 	}
 	@Override
 	void remove(Inode inode) {
@@ -19,11 +20,7 @@ public class file extends Inode{
 	@Override
 	void display() {
 		// TODO Auto-generated method stub
-		System.out.println("file-"+fileName);
+		System.out.println(nodename);
 	}
-	@Override
-	void searchfile(String name) {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

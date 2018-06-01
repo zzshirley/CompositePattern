@@ -7,8 +7,8 @@ public class Inoder extends Inode{
 	
 	List<Inode> nodeList = new ArrayList<Inode>();
 
-	Inoder(String nodename) {
-		super(nodename);
+	Inoder(String nodeName) {
+		super(nodeName);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -27,16 +27,8 @@ public class Inoder extends Inode{
 	@Override
 	void display() {
 		// TODO Auto-generated method stub
-        System.out.println(nodename);
         for(Inode inode:nodeList) {
         		inode.display();
         }
- }
-
-	@Override
-	void searchfile(String name) {
-		// TODO Auto-generated method stub
-		
-	}
-
+	}	
 }
